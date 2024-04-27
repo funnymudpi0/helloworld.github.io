@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太和——留言</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <div class="home">
+        <!-- nav -->
+        <div class="nav">
+            <div class="w">
+      
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="huanjing.html">地理环境</a></li>
+                    <li><a href="wenhua.html">饮食文化</a></li>
+                   <li><a href="honor.html">荣誉称号</a></li>
+					<li><a href="techan.html">留言</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <div class="w">
+                <img src="images/banner.jpg" alt="">
+            </div>
+        </div>
+        <!-- content -->
+        <div class="content">
+            <div class="text">
+                <h1>欢迎留言</h1>
+                 <form action="" method="post" class="basic-grey">
+ 
+              
+ 
+                 <label>
+ 
+                          <span>姓名 :</span>
+ 
+                          <input id="name" type="text" name="name" placeholder="宋子涵" />
+ 
+                 </label>
+ 
+                 <label>
+ 
+                          <span>手机号码 :</span>
+ 
+                          <input id="email" type="email" name="email" placeholder="" />
+ 
+                 </label>
+ 
+ 
+ 
+                 <label>
+ 
+                          <span>发言 :</span>
+ 
+                          <textarea id="message" name="message" placeholder=" "></textarea>
+ 
+                 </label>
+ 
+                 <label>
+ 
+                          <span>评价一下太和 :</span><select name="selection">
+ 
+                                   <option value="Job Inquiry">好</option>
+								   <option value="Job Inquiry">很好</option>
+								   <option value="Job Inquiry">超级无敌托马斯回旋好</option>
+								
+ 
+                          </select>
+ 
+                 </label>
+ 
+                 <label>
+ 
+                          <span>&nbsp;</span>
+ 
+                          <input type="button" class="button" value="Send" />
+ 
+                 </label>
+ 
+         </form>
+ 
+         <script>
+ 
+                 function changeStyle() {
+ 
+            var template = document.getElementById("template");
+ 
+     var index = template.selectedIndex;
+ 
+            var templatevalue = template.options[index].value;
+ 
+            var templatecss = document.getElementById("templatecss");
+ 
+            templatecss.setAttribute("href","css/" + templatevalue + ".css");
+ 
+            document.getElementsByTagName("form")[0].setAttribute("class",templatevalue);
+ 
+          }
+ 
+         </script>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="w">
+                <p>通信一班&nbsp;宋子涵</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
